@@ -1,0 +1,55 @@
+.slider-container2 {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* اینجا نگه داشته می‌شود */
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 200%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slider2 {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    position: relative;
+    transition: transform 0.5s ease-in-out; /* حرکت نرم‌تر */
+}
+
+/* حذف انیمیشن غیرضروری */
+.slider-container2:hover .slider2 {
+    animation: none;
+}
+
+.slide2 {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* دکمه‌های چپ و راست */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(255, 255, 255);
+    color: rgb(159, 158, 158);
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: 10px; }  /* فاصله بهتر */
+.next { right: 10px; }
