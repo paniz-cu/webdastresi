@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'sahel';
+    src: url('./font/sahel.eot'); 
+    src: url('./font/sahel.eot?#iefix') format('embedded-opentype'),
+         url('./font/sahel.woff2') format('woff2'),
+         url('./font/sahel.woff') format('woff'),
+         url('./font/sahel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: right;
+    direction: rtl;
+    font-family: 'sahel', sans-serif;  
+}
+.menu-header {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+
+@tailwind utilities;
+@layer utilities {
+  @media (min-width: 1450px) {
+    .xl2\:block {
+      display: block !important;
+    }
+    .xl2\:hidden {
+      display: none !important;
+    }
+  }
+  
+}
+
+/* تغییرات برای حالت small (sm) */
+/* تغییرات برای حالت small (sm) */
+/* تغییرات برای حالت small (sm) */
+@media (max-width: 639px) {
+  .custom-container {
+    width: 100%; /* عرض 100% در حالت موبایل */
+    height: auto; /* ارتفاع خودکار بر اساس محتوا */
+    padding: 10px; /* تنظیم پدینگ */
+    overflow-x: auto; /* برای جلوگیری از بیرون زدن آیتم‌ها از کادر */
+  }
+
+  .custom-text {
+    font-size: 1.25rem; /* کوچک کردن سایز متن */
+    text-align: center; /* متن را وسط چین می‌کنیم */
+  }
+
+  
+
+  #clock {
+    display: none; /* مخفی کردن ساعت در حالت sm */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+  /* فعال کردن اسکرول عمودی */
+  max-height: 100vh; /* جلوگیری از بیش از حد بزرگ شدن */
+  
+}
+
+/* تنظیمات اسکرول فقط برای منو */
+.menu::-webkit-scrollbar {
+  width: 6px;
+  
+}
+
+.menu::-webkit-scrollbar-track {
+  background: #eee;
+  
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background: #154272;
+  border-radius: 2px;
+  
+}
+/* تنظیمات کلی برای اسکرول */
+::-webkit-scrollbar {
+  width: 8px; /* عرض اسکرول */
+}
+
+/* رنگ پس‌زمینه‌ی اسکرول */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* رنگ پس‌زمینه */
+  border-radius: 2px;
+}
+
+/* رنگ خود اسکرول */
+::-webkit-scrollbar-thumb {
+  background: #06203f; /* رنگ اسکرول */
+  border-radius: 4px;
+}
+
+/* تغییر رنگ هنگام هاور شدن */
+::-webkit-scrollbar-thumb:hover {
+  background: #04203b;
+}
+
+header {
+  position: static !important;
+  overflow: visible !important;
+}
+body {
+  overflow: visible !important;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 20px;
+  top: 100%;
+  background: white;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.group:hover > .submenu {
+  display: block;
+}
+
+.nested-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  z-index: 1001;
+  min-width: 180px;
+}
+
+.group:hover > .nested-submenu {
+  display: block;
+}
+.submenu, .nested-submenu {
+  z-index: 9999 !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.group:hover .submenu, .group:hover .nested-submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.brands-menu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: none;
+}
+
+.group:hover .brands-menu {
+  display: block;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-rows: repeat(6, auto); /* هر ستون 6 آیتم */
+  grid-auto-flow: column; /* پر شدن به‌صورت ستونی */
+  gap: 20px;
+  max-height: 300px; /* کنترل ارتفاع */
+  overflow: hidden;
+}
+
+.brand-item {
+  text-align: right;
+}
+
+.view-more {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: left;
+}
+
+/* استایل مخصوص منوی برندها */
+.highlight-brand {
+  background-color: #f1f1f1; /* تغییر رنگ پس‌زمینه */
+  border-radius: 8px; /* گوشه‌های گرد */
+  padding: 10px; /* اضافه کردن فضا به داخل */
+  border: 2px solid #ff6600; /* مرز با رنگ نارنجی */
+}
+
+/* استایل برای لینک‌های داخل منوی برندها */
+.highlight-brand a {
+  color: #333; /* رنگ متن */
+  font-weight: bold; /* ضخیم کردن فونت */
+}
+
+.highlight-brand a:hover {
+  color: #ff6600; /* تغییر رنگ هنگام هاور */
+}
+
+
+
+
