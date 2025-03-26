@@ -1,0 +1,72 @@
+.slider-containerbrand {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* اینجا نگه داشته می‌شود */
+}
+
+.slider-wrappervb {
+    display: flex;
+    width: 200%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.brands {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    position: relative;
+    transition: transform 0.5s ease-in-out; /* حرکت نرم‌تر */
+}
+
+/* حذف انیمیشن غیرضروری */
+.slider-containerbrand:hover .brands {
+    animation: none;
+}
+
+.slideb {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 110px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(206, 204, 204);
+    transition: transform 0.3s ease-in-out; /* انیمیشن نرم برای هاور */
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .slideb {
+      width: 60px; 
+      height: 30px; 
+    }
+    .slider-containerbrand {
+        width: 96%;
+    }
+}
+/* افکت هاور: حرکت به بالا */
+.slideb:hover {
+    transform: translateY(-10px); /* حرکت 10 پیکسل به بالا */
+}
+
+/* دکمه‌های چپ و راست */
+.prevb, .nextb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(255, 255, 255);
+    color: rgb(159, 158, 158);
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prevb { left: 10px; }  /* فاصله بهتر */
+.nextb { right: 10px; }

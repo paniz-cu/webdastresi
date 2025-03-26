@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dastresi</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/slider.css">
+    <link rel="stylesheet" href="./dist/css/slider2.css">
+    <link rel="stylesheet" href="./dist/css/goods.css">
+    <link rel="stylesheet" href="./dist/css/stuff.css">
+    <link rel="stylesheet" href="./dist/css/Brand.css">
+    <link rel="stylesheet" href="./dist/css/product.css">
+    <link rel="stylesheet" href="./dist/css/Article.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <base href="https://paniz-cu.github.io/webdastresi/">
+
+  </head>
+  <body class=" flex flex-col relative sm:overflow-x-hidden">
+
+<!-- header -->
+<div class="sticky top-0 z-50 bg-white shadow ">
+    <header class="menu-header menu block items-center  fixed top-0 z-50   shadow py-0 md:pb-0" >
+      <div class="relative  top-0 z-50 mx-auto items-center flex px-20 md:py-1 py-1 sm:py-2  sm:bg-gray-100 md:bg-white">
+        <img src="./img/logo.png" alt="" class="md:w-22 w-20 sm:w-20 md:mr-16 sm:mr-0 h-auto ">
+
+        <div class="relative w-full lg:px-5 lg:block hidden mx-auto mt-5 ">
+          <!-- Overlay -->
+          <div id="overlay" class="fixed inset-0 bg-gray-500 opacity-20 hidden z-10" "></div>
+        
+          <!-- Search Box -->
+          <div id="search-box" class="z-20 relative transition-transform duration-500  transform focus-within:scale-100 lg:w-[390px] ">
+            <input type="text" placeholder="جستجو محصولات" class=" text-[16px] w-full py-[9px] pl-4 pr-10   rounded-2xl shadow bg-gray-100 mb-5" />
+            
+            <!-- Search Icon -->
+            <button type="button" class="absolute inset-y-0 right-0 bottom-8 flex items-center pr-4 py-6 text-gray-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" /> 
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>   
+            </button>
+           </div>
+           </div>
+           <nav  class="hidden sm:hidden lg:flex space-x-7 items-center absolute right-[690px] text-[14px] text-gray-400 ">
+            <a href="index.html" class="hover:text-gray-700 transition-all duration-200 font-bold hidden xl2:block">باشگاه مشتریان</a>
+            <a href="about.html" class="hover:text-gray-700 transition-all duration-200 font-bold hidden xl2:block">بلاگ</a>
+            <a href="feature.html" class="hover:text-gray-700 transition-all duration-200 font-bold hidden xl2:block">ارتباط ما</a>
+            <a href="pricing.html" class="hover:text-gray-700 transition-all duration-200 font-bold hidden xl2:block">درباره ما</a>
+            </nav>
+        
+            
+            <button id="burgerButton" class="fixed top-4 right-4 z-50 bg-white p-2 rounded-md shadow-md lg:hidden">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          
+            <!-- پس‌زمینه تیره -->
+            <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden lg:hidden"></div>
+          
+            <!-- منو -->
+            <div id="menu" class=" fixed top-0 right-0 h-full w-3/5 sm:w-2/3 md:w-1/2 bg-white shadow-lg transform translate-x-full transition-transform duration-300 lg:hidden sm:cursor-pointer">
+              <div class="p-8">
+                <button id="closeMenu" class="absolute top-4 left-4">
+                  <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+          
+                <!-- لوگو -->
+                <div class="flex justify-center mb-14">
+                  <img src="./img/logo.png" alt="لوگو" class="w-44">
+                </div>
+
+                <div class="flex justify-center space-x-6 border-b border-t border-gray-300  pt-5 pb-5 mb-10">
+                  <a href="#" class="text-gray-700 hover:text-blue-600 transition text-[14px]">خانه</a>
+                  <a href="#" class="text-gray-700 hover:text-blue-600 transition  text-[14px] text-nowrap">درباره ما</a>
+                  <a href="#" class="text-gray-700 hover:text-blue-600 transition text-nowrap text-[14px]">تماس با ما</a>
+                  <a href="#" class="text-gray-700 hover:text-blue-600 transition  text-[14px]">بلاگ</a>
+                </div>
+          
+                <!-- آیتم‌های منو -->
+                <nav class="menu h-[300px] p-5 overflow-y-auto border-gray-300">
+                  <ul class="space-y-10 text-black text-[14px]">
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-4 pb-4 cursor-pointer" data-toggle>
+                        لوازم جانبی موبایل و کامپیوتر <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden  text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                        <li>هولدر و نگهدارنده</li>
+
+                        <li class="submenu-item ">
+                          <div class="flex justify-between items-center cursor-pointer " data-toggle>
+                            تجهیزات ذخیره سازی <span>▶</span>
+                          </div>
+                          <ul class="sub-submenu hidden pl-4 pt-3 text-gray-500 space-y-4">
+                            <li>هارد اکسترنال</li>
+                            <li>فلش مموری</li>
+                            <li>کارت حافظه</li>
+                          </ul>
+                        </li>
+                        
+                        <li>اسپیکر</li>
+                        <li>ماوس و کیبورد و پدموس</li>
+
+                        <li class="submenu-item ">
+                          <div class="flex justify-between items-center cursor-pointer " data-toggle>
+                            هندزفری و هدست میکروفون<span>▶</span>
+                          </div>
+                          <ul class="sub-submenu hidden pl-4 pt-3 text-gray-500 space-y-4">
+                            <li>میکروفون</li>
+                            <li>هندزفری سیم دار</li>
+                            <li>هدست سیم دار</li>
+                            <li>هدفون بلوتوث</li>
+                            <li>هندزفری بلوتوث دوگوش</li>
+                            <li>هندزفری بلوتوث دورگردنی</li>
+                            <li>هندزفری بلوتوث تک گوش</li>
+                          </ul>
+                        </li>
+
+                        <li>پاوربانک و جامپ استارتر</li>
+
+                        <li class="submenu-item ">
+                          <div class="flex justify-between items-center cursor-pointer " data-toggle>
+                            کابل شارژر<span>▶</span>
+                          </div>
+                          <ul class="sub-submenu hidden pl-4 pt-3 text-gray-500 space-y-4">
+                            <li>میکرو یواس بی</li>
+                            <li>تایپ سی</li>
+                            <li>لایتنینگ</li>
+                            <li>دوسر تایپ سی</li>
+                            <li>تایپ سی به لایتنینگ</li>
+                            <li>سه کاره</li>
+                            <li>کابل شارژ سامسونگ</li>
+                          </ul>
+                        </li>
+
+                        <li class="submenu-item ">
+                          <div class="flex justify-between items-center cursor-pointer " data-toggle>
+                            آداپتور و شارژر<span>▶</span>
+                          </div>
+                          <ul class="sub-submenu hidden pl-4 pt-3 text-gray-500 space-y-4">
+                            <li>شارژر دیواری</li>
+                            <li>شارژر وایرلس</li>
+                            <li>شارژر رومیزی</li>
+                            <li>شارژر فندکی</li>
+                          </ul>
+                        </li>
+
+                        <li>دسته بازی و خنک کننده موبایل</li>
+                        <li>انواع تبدیل برق</li>
+                        <li>کابل و دانگل انتقال تصویر</li>
+                        <li>انواع هاب</li>
+                        <li>فن خنک کننده کامپیوتر</li>
+                      </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                        کابل - مبدل - رابط <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                        <li>کابل HDMI </li>
+                        <li>کابل پرینتر</li>
+                        <li>کابل هارد اکسترنال</li>
+                        <li>انواع رابط و تبدیل</li>
+                        <li>کابل AUX</li>
+                        <li>کابل 2 به 1 صدا</li>
+                        <li>کابل اپیتیکال</li>
+                        <li>کابل و فیش OTG</li>
+                      </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                        لوازم تولید محتوا <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                        <li>میکروفون</li>
+                        <li>رینگ لایت و پایه</li>
+
+                      </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                        لوازم شبکه <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                        <li>مودم و روتر</li>
+                        <li>مودم همراه</li>
+                        <li>هاب شبکه</li>
+                        <li>لوازم جانبی</li>
+                      </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                        کنسول بازی و لوازم جانبی <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px] ">
+                        <li>دسته بازی</li>
+                        <li>هندزفری و هدست</li>
+                        <li>کنسول</li>
+                        <li>کیف</li>
+                        <li>ماوس و کیبورد</li>
+                        <li>شارژر دسته بازی</li>
+                      </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                      <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                        لوازم خانگی و شخصی <span>▼</span>
+                      </div>
+                      <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                        <li>انواع گجت های جذاب</li>
+
+                        <li class="submenu-item ">
+                          <div class="flex justify-between items-center cursor-pointer " data-toggle>
+                             باتری و شارژر<span>▶</span>
+                          </div>
+                          <ul class="sub-submenu hidden pl-4 pt-3 text-gray-500 space-y-4">
+                            <li>باتری آلکالین</li>
+                            <li>باتری ساده</li>
+                            <li>باتری شارژی</li>
+                            <li>شارژر باتری</li>
+                            <li>باتری سکه ای</li>
+                        </li>
+                      </ul>
+                    </li>
+                        <li>اندروید باکس وگیرنده دیجیتال</li>
+                        <li>آنتن رومیزی</li>
+                        <li>مچ بند و ساعت هوشمند</li>
+                        <li>محصولات کمبو</li>
+                        <li>رابط برق و USB</li>
+                        <li>اف ام پلیر</li>
+                  </ul>
+                  
+                  <li class="menu-item">
+                    <div class="flex justify-between items-center mb-6 pb-5 cursor-pointer" data-toggle>
+                  برندها <span>▼</span>
+                    </div>
+                    <ul class="submenud hidden pl-4 text-gray-700 space-y-6 bg-gray-100 text-[15px] w-[200px]">
+                      <li>هایلو | Haylou</li>
+                      <li>دای هارد  |  Die Hard</li>
+                      <li>اسکال کندی | SkullCandy</li>
+                      <li>اپل    |     Apple</li>
+                      <li>کملیون   |   Camelion</li>
+                      <li>کلومن پلاس  | Keluman Plus</li>
+                      <li>یسیدو    |   Yesido</li>
+                      <li>نزتک    |    Naztech</li>
+                      <li>پرووان   |   ProOne</li>
+                      <li>ال دی نیو |  Ldnio</li>
+                      <li>دوراسل   |   Duracell</li>
+                      <li>سومو    |    Somo</li>
+                      <li>بیسوس   |    Baseus</li>
+                      <li>بویا    |    Boya</li>
+                      <li>مک دودو   |   Mcdodo</li>
+                      <li>پاورولوژی  | Powerology</li>
+                      <li>راوپاور   |   Ravpower</li>
+                      <li>آکی    |    Aukey</li>
+                      <li>انکر   |    Anker</li>
+                      <li>آینوبن    |    inoben</li>
+                      <li>مومکس    |   Momax</li>
+                      <li>وسترن دیجیتال  | Western Digital</li>
+                      <li>شیاومی   |   Xiaomi</li>
+                      <li>پاناسونیک    |    Panasonic</li>
+                      <li>نیکین   |    Neekin</li>
+                      <li>پایونیر    |    Pioneer</li>
+                      <li>جی پی    |   GP</li>
+                      <li>ای فورتک  |   A4tech</li>
+                      <li>وان مور   |   1more</li>
+                      <li>مکسل    |    Maxell</li>
+                    </ul>
+                  </li>
+                </nav>
+          
+                <!-- دکمه ورود -->
+                <div class="mt-24">
+                  <a href="#" class="text-[16px] block hover:text-black transition-all duration-200 text-center bg-indigo-950 items-center justify-center pr-10 text-white py-3 rounded-2xl">ورود به باشگاه مشتریان</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="flex items-center space-x-3">
+              <div class="relative">
+                <button class="hidden xl2:block cursor-pointer p-2 bg-gray-200 hover-icon rounded-xl shadow  focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-indigo-950 transition-all duration-200 text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 5h12.4M7 13H3M16 19a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </button>
+                <span class=" hidden sm:hidden hover-icon  absolute -top-3  -right-3 lg:inline-flex lg:items-center lg:justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full">0</span>
+              </div>
+
+              <button class="hidden xl2:block cursor-pointer px-3 py-[10px] ml-10 bg-blue-800 font-bold text-[14px] text-white rounded-xl hover:bg-indigo-950 transition-all duration-200 focus:outline-none whitespace-nowrap">
+                ورود و ثبت‌نام
+              </button>
+              
+              <button class=" absolute left-12 p-2 cursor-pointer focus:outline-none">
+                <!-- آیکون کاربر -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="block lg:hidden sm:block h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 0c-4.418 0-8 3.582-8 8h16c0-4.418-3.582-8-8-8z" />
+                </svg>
+              </button>
+              <div class="absolute left-0">
+                <button class="block lg:hidden sm:block cursor-pointer p-3  hover-icon  focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6   text-gray-500 "  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 5h12.4M7 13H3M16 19a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </button>
+                <span class="lg:hidden  hover-icon  absolute -top-1  right-0  inline-flex sm:inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full">0</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="block lg:hidden sm:block cursor-pointer absolute left-28 w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.75-5.4a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+              </svg>
+              
+            </div>
+
+            
+      </div>
+
+<div class="menu  items-center  flex-grow shadow py-0  md:pb-0" id="menuContainer"></div>
+    </header>
+</div>
+
+<!--chat-->
+<div class=" flex items-center justify-center">
+<div class="fixed bottom-4 right-4 z-140 shadow-2xl">
+  <button id="chatButton" class="bg-blue-800 text-white px-4 py-4 rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:scale-115">💬</button>
+  <div id="chatBox" class="hidden fixed bottom-16 right-4 w-100 h-160 bg-white shadow-lg rounded-lg p-4">
+      <div class="flex  justify-between items-center border-b pb-2 mb-2">
+        <img src="./img/9f17736c-3b1d-4edb-b64c-5023a5432ff6.webp" alt="" class="w-8 h-8">
+          <span class="">سیستم مشاوره و پشتیبانی آنلاین دسترسی</span>
+          <button id="closeChat" class="text-black">✖</button>
+      </div>
+      <div class="h-120 overflow-y-auto  p-2 text-sm" id="chatMessages"></div>
+      <div class="flex space-x-4">
+      <input type="text" id="chatInput" class=" shadow-2xl py-3 border border-gray-300 rounded p-1 mt-2 w-[400px]" placeholder="اینجا تایپ کنید">
+      <button id="sendChat" class="bg-blue-500 text-white px-3 py-0 rounded mt-2 ">◀</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- slider -->
+    <div class="slider w-full bg-cover z-10 ">
+      <div class="swiper mySwiper ">
+        <div class="swiper-wrapper ">
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+<!-- products -->
+<div class="custom-container bg-[#e2e2e2] w-full lg:w-[1280px] sm:w-[280px] h-auto lg:rounded-2xl items-center justify-center relative lg:mr-30 mt-10 p-4 sm:mr-0">
+  <div class="flex justify-between items-center mb-4">
+    <p class="custom-text text-4xl font-bold text-gray-500 lg:pr-10 sm: pr-28 sm: pt-5">
+      <span class="text-red-500">%</span> تخفیف های روزانه دسترسی
+    </p>
+    <div id="clock" class="text-gray-500 text-2xl m-10 font-bold">
+      <!-- ساعت -->
+    </div>
+  </div>
+
+  <div id="product-list" class="product-list grid grid-cols-1  lg:grid-cols-2  gap-4 justify-between items-center overflow-x-auto max-w-full ">
+    <div class="product-item">
+      <!-- محتوا آیتم 1 -->
+    </div>
+    <div class="product-item">
+      <!-- محتوا آیتم 2 -->
+    </div>
+    <div class="product-item">
+      <!-- محتوا آیتم 3 -->
+    </div>
+    <!-- آیتم‌های بیشتر -->
+  </div>
+</div>
+
+<!-- slider2 -->
+<section class="mt-10 sm:hidden lg:block">
+  <p class="font-bold text-2xl text-center mb-10 mr-[680px] sm: hidden lg:block">دسته بندی‌های منتخب</p>
+
+  <div class="slider-container2 cursor-pointer">
+    <button class="prev">&#10094;</button>
+
+    <div class="slider-wrapper">
+      <div class="slider2"></div>
+    </div>
+    
+
+    <button class="next z-10">&#10095;</button>
+  </div>
+  
+</section>
+ <!-- slider2 sm -->
+ <p class="font-bold text-2xl text-center sm:block lg:hidden sm: mr-32 sm:mt-0 ">دسته بندی‌های منتخب</p>
+ <div class="grid grid-cols-2 gap-4 p-4  sm:block lg:hidden sm: mt-0 cursor-pointer">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png" alt="Image 1" class="w-full h-auto">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png" alt="Image 2" class="w-full h-auto ">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png" alt="Image 3" class="w-full h-auto  ">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png" alt="Image 4" class="w-full h-auto ">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/battery.png" alt="Image 5" class="w-full h-auto ">
+  <img src="https://www.dastresi.com/upload/filemanager/2023/04/20/gaming.png" alt="Image 6" class="w-full h-auto ">
+</div>
+
+
+
+
+
+<!-- goods -->
+<div class="bg-[#e2e2e2] lg:w-[1280px] lg:h-[590px] sm:mr-0 lg:rounded-2xl items-center justify-center relative lg:mr-30 mt-22">
+  <div class="flex justify-between items-center">
+    <p class="lg:text-[25px] sm: text-[20px] font-bold text-gray-500 pr-10">همین الان موجود شد...</p>
+    <p  class="text-gray-600 text-[15px] m-10 sm: hidden lg:block">مشاهده همه محصولات >></p>
+    <p  class="text-gray-600 sm: text-[17px] m-10  sm:block lg:hidden">>></p>
+  </div>
+  <button class="prevg">&#10094;</button>
+  <div class="slider-containerg grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between items-center overflow-x-hidden max-w-full">
+    <div class="sliderg"></div>
+    <button class="nextg z-10">&#10095;</button>
+</div>
+</div>
+
+<!-- dastresi -->
+<section class="mt-20 text-center sm: hidden lg:block">
+  <p class="font-bold text-2xl text-center mb-10 mr-[580px]">چرا دسترسی رو برای خرید انتخاب کنیم؟</p>
+
+  <div class="flex justify-between items-center w-[1250px] mr-[150px] ">
+
+    <div class="flex flex-col h-full justify-center items-center text-center p-4">
+    <img src="https://www.dastresi.com/images/icons/icon2.png" class="w-16 mb-2">
+    <p class=" text-center font-bold text-gray-500 mb-2">مشاوره تخصصی برای خرید محصول</p>
+    <p class="w-full text-center text-[13px] font-bold text-black-87 leading-7 ">"برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب رو انجام دهید."</p>
+    </div>
+
+    <div class="flex flex-col h-full justify-center items-center p-4">
+      <img src="https://www.dastresi.com/images/icons/icon1.png" class="w-16 mb-2">
+      <p class="flex text-center font-bold text-gray-500 mb-2">قیمت مناسب با بالاترین کیفیت</p>
+      <p class="text-center text-[13px] font-bold text-black-87 leading-7">"گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب ترین قیمت به دست شما برساند."</p>
+      </div>
+    
+      <div class="flex flex-col h-full justify-center items-center p-4">
+        <img src="https://www.dastresi.com/images/icons/icon3.png" class="w-16 mb-2">
+        <p class="flex text-center font-bold text-gray-500 mb-2">ارسال سریع</p>
+        <p class="text-center text-[13px] text-black-87 leading-7 font-bold">"ارسال از طریق تیپاکس پست پیشتاز و پیک موتوری (ویژه تهران) صورت می گیرد."</p>
+        </div>
+    
+        <div class="flex flex-col h-full justify-center items-center p-4">
+          <img src="https://www.dastresi.com/images/icons/icon4.png" class="w-16 mb-2">
+          <p class="flex text-center font-bold text-gray-500 mb-2">امکان خرید حضوری</p>
+          <p class="text-center text-[13px] font-bold text-black-87 leading-7">"مشتری گرامی جهت خرید حضوری می توانید به آدرس مندرج در پایین سایت مراجعه نمایید."</p>
+          </div>
+        
+
+  </div>
+</section>
+    
+<!-- Stuff -->
+<div class="bg-[#e2e2e2] lg:w-[1280px] lg:h-[590px] sm:mr-0 lg:rounded-2xl items-center justify-center relative lg:mr-30 mt-22">
+  <div class="flex justify-between items-center">
+    <p class="lg:text-[25px] sm: text-[20px] font-bold text-gray-500 pr-10">همین الان موجود شد...</p>
+    <p  class="text-gray-600 text-[15px] m-10 sm: hidden lg:block">مشاهده همه محصولات >></p>
+    <p  class="text-gray-600 sm: text-[17px] m-10  sm:block lg:hidden">>></p>
+  </div>
+  <button class="prevS">&#10094;</button>
+  <div class="slider-containerg grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between items-center overflow-x-hidden max-w-full">
+    <div class="sliderS"></div>
+    <button class="nextS z-10">&#10095;</button>
+</div>
+</div>
+
+<!-- brands -->
+<div class="lg:text-[26px]  sm: text-2xl font-bold text-gray-500 lg:px-30 sm: px-6 py-10">محبوب ترین برندها</div>
+<div class="slider-containerbrand ">
+  <button class="prevb">&#10094;</button>
+  <div class="slider-wrapperb">
+    <div class="brands lg:w-24 "></div>
+  </div>
+  <button class="nextb z-10">&#10095;</button>
+</div>
+
+
+<!-- article -->
+<div class="flex justify-between items-center lg:px-20  lg:py-14">
+  <p class="lg:text-[26px] sm: text-2xl font-bold text-gray-500 lg:pr-10 sm: pr-10 ">آخرین مقالات</p>
+  <p  class="text-gray-600 text-[15px] m-10 sm: hidden lg:block">ورود به بلاگ >></p>
+  <p  class="text-gray-600 sm: text-[17px] m-10  sm:block lg:hidden">>></p>
+</div>
+<div class="slider-containerArticle cursor-pointer ">
+
+  <div class="slider-wrapperA ">
+    <div class="article "></div>
+  </div>
+
+  <div class="slider-pagination ">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+  </div>
+
+</div>
+
+<!-- footer -->
+<section class="bg-[#e2e2e2] lg:h-[100px] lg:w-full text-[13px] font-bold text-gray-500 flex flex-col sm:flex-row sm:items-center justify-between lg:px-4 mt-24 lg:space-y-4 sm: space-y-8 ">
+  <!-- شماره تماس -->
+  <div class="flex items-center gap-2 self-start sm:self-auto sm:mr-16 w-full sm:w-auto justify-start sm:justify-normal">
+    <img src="./img/telephone-svgrepo-com (2).png" alt="" class="w-[20px]">
+    <p>021-33902646</p>
+  </div>
+
+  <!-- ساعت کاری -->
+  <div class="flex items-center gap-1 w-full sm:w-auto justify-start sm:justify-normal">
+    <img src="./img/clock-five-svgrepo-com.png" alt="" class="w-[20px]">
+    <p>شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی ساعت 16</p>
+  </div>
+
+  <!-- آدرس -->
+  <div class="flex items-center gap-2 w-full sm:w-auto justify-start sm:justify-normal">
+    <img src="./img/location-pin-svgrepo-com.png" alt="" class="w-[20px]">
+    <p>تهران- میدان امام خمینی- پاساژ لباف- همکف- پلاک 3- فروشگاه بدیع</p>
+  </div>
+
+  <!-- دکمه "برو بالا" (مخفی در موبایل) -->
+  <button id="scrollToTopBtn" class="hidden sm:flex bg-white text-nowrap text-gray-600 shadow-md rounded-2xl px-5 py-4 items-center gap-2 ml-[70px] hover:bg-gray-100">
+    <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 15l-7-7-7 7"></path>
+    </svg>
+    <span>برو بالا</span>
+  </button>
+</section>
+
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-gray-100 p-4">
+  <!-- لوگو و شبکه‌های اجتماعی -->
+  <div class="flex flex-col items-center sm:items-start mt-10">
+    <img class="p-2 w-[200px]" src="./img/logo.png">
+    <div class="flex items-center gap-2 mt-4">
+      <p>با ما در ارتباط باشید:</p>
+      <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-pink-500 transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm6.75 12.5a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zm2.75-5.75a1 1 0 100-2 1 1 0 000 2z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- درباره فروشگاه -->
+  <div class="text-center sm:text-right">
+    <p class="p-2 text-[20px] font-bold">فروشگاه اینترنتی دسترسی</p>
+    <p class="p-2 text-[16px] text-gray-600 leading-7">
+      فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398 از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست، لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران گجت جذاب ادامه میدهد
+    </p>
+  </div>
+
+  <!-- دسترسی سریع -->
+  <div class="flex flex-col items-center sm:items-start space-y-4">
+    <p class="p-2 text-[20px] font-bold ">دسترسی سریع</p>
+    <a href="index.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">باشگاه مشتریان</a>
+    <a href="index.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">سوالات متداول</a>
+    <a href="about.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">بلاگ</a>
+    <a href="index.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">شرایط و قوانین</a>
+    <a href="feature.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">ارتباط ما</a>
+    <a href="pricing.html" class="hover:text-gray-800 transition-all duration-200 text-[15px] text-gray-600">درباره ما</a>
+  </div>
+
+  <!-- تصویر -->
+  <div class="flex justify-center sm:justify-end">
+    <img src="./img/Screenshot 2025-03-01 134445.png" class="p-2 lg:w-[150px] lg:h-[250px]">
+  </div>
+</div>
+
+<!-- فوتر -->
+<div class="bg-[#0a5abd] text-white text-center text-[14px] py-3 w-full font-bold lg:pr-[530px] lg:pb-3">
+  تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می باشد.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="./src/ts/main.ts"></script>
+    <script src="./dist/script/"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+// dropdown
+document.querySelectorAll('[data-toggle]').forEach(item => {
+    item.addEventListener('click', function() {
+      let submenud = this.nextElementSibling;
+      if (submenud && submenud.tagName === "UL") {
+        submenud.classList.toggle('hidden');
+        
+        // تغییر فلش نشانگر باز/بسته شدن
+        let arrow = this.querySelector('span');
+        if (arrow) {
+          arrow.textContent = submenud.classList.contains('hidden') ? '▶' : '▼';
+        }
+      }
+    });
+  });
+
+
+
+// Swiper
+function loadSwiper() {
+    var swiper = new Swiper(".mySwiper", {
+        effect: "fade", // فعال کردن افکت محو شدن
+        fadeEffect: {
+            crossFade: true // برای ترکیب بهتر فریم‌ها
+        },
+        spaceBetween: 1,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true, // فعال‌سازی چرخش بی‌نهایت
+    });
+}
+setTimeout(() => {
+    loadSwiper();
+}, 1000);
+
+// Slider2
+const slider2 = document.querySelector('.slider2');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let isPaused2 = false;
+let scrollAmount2 = 0;
+const scrollStep2 = 200; 
+let manualPause = false; 
+nextBtn.addEventListener('click', () => {
+    manualPause = true; 
+    setTimeout(() => manualPause = false, 2000); 
+
+    if (scrollAmount2 < slider2.scrollWidth - slider2.parentElement.clientWidth) {
+        scrollAmount2 += scrollStep2; // تغییر جهت حرکت از چپ به راست
+        slider2.style.transition = "transform 0.5s ease";
+        slider2.style.transform = `translateX(${scrollAmount2}px)`;
+    }
+});
+prevBtn.addEventListener('click', () => {
+    manualPause = true;
+    setTimeout(() => manualPause = false, 2000);
+
+    if (scrollAmount2 > 0) {
+        scrollAmount2 -= scrollStep2;
+        slider2.style.transition = "transform 0.5s ease";
+        slider2.style.transform = `translateX(${scrollAmount2}px)`;
+    }
+});
+function startSlider() {
+    if (!isPaused2 && !manualPause) {
+        scrollAmount2 += 1; // تغییر جهت حرکت به راست
+        slider2.style.transform = `translateX(${scrollAmount2}px)`;
+
+        // اگر به انتها رسید، مقدار را به ابتدا بازگردان
+        if (scrollAmount2 >= slider2.scrollWidth / 2) {
+            scrollAmount2 = 0;
+            slider2.style.transition = "none"; // جلوگیری از پرش ناگهانی
+        } else {
+            slider2.style.transition = "transform 3s linear";
+        }
+    }
+    requestAnimationFrame(startSlider);
+}
+slider2.addEventListener("mouseenter", () => isPaused2 = true);
+slider2.addEventListener("mouseleave", () => isPaused2 = false);
+startSlider();
+
+
+
+
+// goods
+const sliderg = document.querySelector('.sliderg');
+let slidesg = document.querySelectorAll('.slideg');
+const prevBtng = document.querySelector('.prevg');
+const nextBtng = document.querySelector('.nextg');
+let isPausedg = false;
+let scrollAmountg = 0;
+const scrollStepg = 200; 
+let manualPauseg = false; 
+nextBtng.addEventListener('click', () => {
+    manualPauseg = true; 
+    setTimeout(() => manualPauseg = false, 2000); 
+
+    if (scrollAmountg < sliderg.scrollWidth - sliderg.parentElement.clientWidth) {
+        scrollAmountg += scrollStepg; // تغییر جهت حرکت از چپ به راست
+        sliderg.style.transition = "transform 0.5s ease";
+        sliderg.style.transform = `translateX(${scrollAmountg}px)`;
+    }
+});
+prevBtng.addEventListener('click', () => {
+    manualPauseg = true;
+    setTimeout(() => manualPauseg = false, 2000);
+
+    if (scrollAmountg > 0) {
+        scrollAmountg -= scrollStepg;
+        sliderg.style.transition = "transform 0.5s ease";
+        sliderg.style.transform = `translateX(${scrollAmountg}px)`;
+    }
+});
+function startSliderg() {
+    if (!isPausedg && !manualPauseg) {
+        scrollAmountg += 1; // تغییر جهت حرکت به راست
+        sliderg.style.transform = `translateX(${scrollAmountg}px)`;
+
+        // اگر به انتها رسید، مقدار را به ابتدا بازگردان
+        if (scrollAmountg >= sliderg.scrollWidth / 2) {
+            scrollAmountg = 0;
+            sliderg.style.transition = "none"; // جلوگیری از پرش ناگهانی
+        } else {
+            sliderg.style.transition = "transform 3s linear";
+        }
+    }
+    requestAnimationFrame(startSliderg);
+}
+sliderg.addEventListener("mouseenter", () => isPausedg = true);
+sliderg.addEventListener("mouseleave", () => isPausedg = false);
+startSliderg();
+
+
+// Stuff
+const sliderS = document.querySelector('.sliderS');
+let slidesS = document.querySelectorAll('.slideS');
+const prevBtnS = document.querySelector('.prevS');
+const nextBtnS = document.querySelector('.nextS');
+let isPausedS = false;
+let scrollAmountS = 0;
+const scrollStepS = 200;
+let manualPauseS = false;
+nextBtnS.addEventListener('click', () => {
+    manualPauseS = true; 
+    setTimeout(() => manualPauseS = false, 2000); 
+
+    if (scrollAmountS < sliderS.scrollWidth - sliderS.parentElement.clientWidth) {
+        scrollAmountS += scrollStepS; // تغییر جهت حرکت از چپ به راست
+        sliderS.style.transition = "transform 0.5s ease";
+        sliderS.style.transform = `translateX(${scrollAmountS}px)`;
+    }
+});
+prevBtnS.addEventListener('click', () => {
+    manualPauseS = true;
+    setTimeout(() => manualPauseS = false, 2000);
+
+    if (scrollAmountS > 0) {
+        scrollAmountS -= scrollStepS;
+        sliderS.style.transition = "transform 0.5s ease";
+        sliderS.style.transform = `translateX(${scrollAmountS}px)`;
+    }
+});
+function startSliderS() {
+    if (!isPausedS && !manualPauseS) {
+        scrollAmountS += 1; // تغییر جهت حرکت به راست
+        sliderS.style.transform = `translateX(${scrollAmountS}px)`;
+
+        // اگر به انتها رسید، مقدار را به ابتدا بازگردان
+        if (scrollAmountS >= sliderS.scrollWidth / 2) {
+            scrollAmountS = 0;
+            sliderS.style.transition = "none"; // جلوگیری از پرش ناگهانی
+        } else {
+            sliderS.style.transition = "transform 3s linear";
+        }
+    }
+    requestAnimationFrame(startSliderS);
+}
+sliderS.addEventListener("mouseenter", () => isPausedS = true);
+sliderS.addEventListener("mouseleave", () => isPausedS = false);
+startSliderS();
+
+
+
+
+
+// Brands
+const brands = document.querySelector('.brands');
+const prevBtnb = document.querySelector('.prevb');
+const nextBtnb = document.querySelector('.nextb');
+let isPausedb = false;
+let scrollAmountb = 0;
+const scrollStepb = 200;
+let manualPauseb = false; 
+nextBtnb.addEventListener('click', () => {
+    manualPauseb = true; 
+    setTimeout(() => manualPause = false, 2000); 
+
+    if (scrollAmountb < brands.scrollWidth - brands.parentElement.clientWidth) {
+        scrollAmountb += scrollStepb; 
+        brands.style.transition = "transform 0.5s ease";
+        brands.style.transform = `translateX(${scrollAmountb}px)`;
+    }
+});
+prevBtnb.addEventListener('click', () => {
+    manualPauseb = true;
+    setTimeout(() => manualPauseb = false, 2000);
+
+    if (scrollAmountb > 0) {
+        scrollAmountb -= scrollStepb;
+        brands.style.transition = "transform 0.5s ease";
+        brands.style.transform = `translateX(${scrollAmountb}px)`;
+    }
+});
+function startSliderb() {
+    if (!isPausedb && !manualPauseb) {
+        scrollAmountb += 1; 
+        brands.style.transform = `translateX(${scrollAmountb}px)`;
+ 
+        if (scrollAmountb >= brands.scrollWidth / 2) {
+            scrollAmountb = 0;
+            brands.style.transition = "none";
+        } else {
+            brands.style.transition = "transform 3s linear";
+        }
+    }
+    requestAnimationFrame(startSliderb);
+}
+brands.addEventListener("mouseenter", () => isPausedb = true);
+brands.addEventListener("mouseleave", () => isPausedb = false);
+startSliderb();
+
+// Article
+const article = document.querySelector('.article');
+let isPausedA = false;
+let scrollAmountA = 0;
+const scrollStepA = 200;
+let manualPauseA = false; 
+
+function startSliderA() {
+    if (!isPausedA && !manualPauseA) {
+        scrollAmountA += 1; 
+        article.style.transform = `translateX(${scrollAmountA}px)`;
+ 
+        if (scrollAmountA >= article.scrollWidth / 2) {
+            scrollAmountA = 0;
+            article.style.transition = "none";
+        } else {
+            article.style.transition = "transform 12s linear";
+        }
+    }
+    requestAnimationFrame(startSliderA);
+}
+article.addEventListener("mouseenter", () => isPausedA = true);
+article.addEventListener("mouseleave", () => isPausedA = false);
+startSliderA();
+
+// Button
+const scroll=document.getElementById("scrollToTopBtn");
+scroll.addEventListener("click",()=>{
+  window.scrollTo({
+    top:0,
+    behavior: "smooth"
+  });
+});
+
+// chat
+        const chatButton = document.getElementById("chatButton");
+        const chatBox = document.getElementById("chatBox");
+        const closeChat = document.getElementById("closeChat");
+        const sendChat = document.getElementById("sendChat");
+        const chatInput = document.getElementById("chatInput");
+        const chatMessages = document.getElementById("chatMessages");
+
+        chatButton.addEventListener("click", () => {
+            chatBox.classList.toggle("hidden");
+        });
+
+        closeChat.addEventListener("click", () => {
+            chatBox.classList.add("hidden");
+        });
+
+        sendChat.addEventListener("click", () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                const newMessage = document.createElement("div");
+                newMessage.textContent = message;
+                newMessage.classList.add("bg-gray-200", "p-1", "rounded", "mb-1");
+                chatMessages.appendChild(newMessage);
+                chatInput.value = "";
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        });
+
+
+    </script>
+  </body>
+</html>

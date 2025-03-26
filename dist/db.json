@@ -1,0 +1,795 @@
+{
+    "menu":[
+        {"id":1,"name":"خانه","link":"https://google.com","dropdown":[]},
+
+        {"id":2,"name":"لوازم جانبی موبایل  و کامپیوتر ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"هولدر و نگهدارنده","link":"#"},
+            {"id":2,"name":"تجهیزات ذخیره سازی","link":"#","dropdown":[
+                {"id":1,"name":"فلش مموری","link":"#"},
+                {"id":2,"name":"کارت حافظه","link":"#"},
+                {"id":3,"name":"هارد اکسترنال","link":"#"}
+            ]},
+            {"id":3,"name":"اسپیکر","link":"#"},
+            {"id":4,"name":"ماوس و کیبورد و پدموس","link":"#"},
+            {"id":5,"name":"هندزفری و هدست میکروفن","link":"#","dropdown":[
+                {"id":1,"name":"میکروفون","link":"#"},
+                {"id":2,"name":"هندزفری سیم دار","link":"#"},
+                {"id":3,"name":"هدست سیم دار","link":"#"},
+                {"id":4,"name":"هدفون بلوتوث","link":"#"},
+                {"id":5,"name":"هندزفری بلوتوث دو گوش","link":"#"},
+                {"id":6,"name":"هندزفری بلوتوث دورگردنی","link":"#"},
+                {"id":7,"name":"هندزفری بلوتوث تک گوش","link":"#"}
+
+            ]},
+            {"id":6,"name":"پاوربانک و جامپ استارتر","link":"#"},
+            {"id":7,"name":"کابل شارژ","link":"#","dropdown":[
+                {"id":1,"name":"میکرو یواس بی","link":"#"},
+                {"id":2,"name":"تایپ سی","link":"#"},
+                {"id":3,"name":"لایتنینگ","link":"#"},
+                {"id":4,"name":"دوسر تایپ سی","link":"#"},
+                {"id":5,"name":"تایپ سی به لایتنینگ","link":"#"},
+                {"id":6,"name":"سه کاره","link":"#"},
+                {"id":7,"name":"کابل شارژ سامسونگ","link":"#"}
+            ]},
+            {"id":8,"name":"آداپتور و شارژر","link":"#","dropdown":[
+                {"id":1,"name":"شارژر دیواری","link":"#"},
+                {"id":2,"name":"شارژر وایرلس","link":"#"},
+                {"id":3,"name":"شارژر رومیزی","link":"#"},
+                {"id":4,"name":"شارژر فندکی","link":"#"}
+
+            ]},
+            {"id":9,"name":"دسته بازی و خنک کننده موبایل","link":"#"},
+            {"id":10,"name":"انواع تبدیل برق","link":"#"},
+            {"id":11,"name":"کابل و دانگل انتقال تصویر","link":"#"},
+            {"id":12,"name":"انواع هاب","link":"#"},
+            {"id":13,"name":"فن خنک کننده کامپیوتر","link":"#"}
+
+        ]},
+
+        {"id":3,"name":"کابل-مبدل-رابط ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"کابل HDMI","link":"#"},
+            {"id":2,"name":"کابل پرینتر","link":"#"},
+            {"id":3,"name":"کابل هارد اکسترنال","link":"#"},
+            {"id":4,"name":"انواع رابط و تبدیل","link":"#"},
+            {"id":5,"name":"کابل AUX","link":"#"},
+            {"id":6,"name":"کابل 2 به 1 صدا","link":"#"},
+            {"id":7,"name":"کابل اپتیکال","link":"#"},
+            {"id":8,"name":"کابل و فیش OTG","link":"#"}
+
+        ]},
+
+        {"id":4,"name":"لوازم تولید محتوا ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"میکروفون","link":"#"},
+            {"id":2,"name":"رینگ لایت و پایه","link":"#"}
+
+        ]},
+
+        {"id":5,"name":"لوازم شبکه ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"مودم - روتر","link":"#"},
+            {"id":2,"name":"هاب شبکه","link":"#"},
+            {"id":3,"name":"مودم همراه","link":"#"},
+            {"id":4,"name":"لوازم جانبی","link":"#"}
+        ]},
+
+        {"id":6,"name":"کنسول بازی و لوازم جانبی ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"هندزفری و هدست","link":"#"},
+            {"id":2,"name":"دسته بازی","link":"#"},
+            {"id":3,"name":"ماوس و کیبورد","link":"#"},
+            {"id":4,"name":"کیف","link":"#"},
+            {"id":5,"name":"کنسول","link":"#"},
+            {"id":6,"name":"شارژر دسته بازی","link":"#"}
+        ]},
+
+        {"id":7,"name":"لوازم خانگی و شخصی ","link":"https://google.com","dropdown":[
+            {"id":1,"name":"انواع گجت های جذاب","link":"#"},
+            {"id":2,"name":"باتری و شارژر","link":"#","dropdown":[
+                {"id":1,"name":"باتری آلکالین","link":"#"},
+                {"id":2,"name":"باتری ساده","link":"#"},
+                {"id":3,"name":"باتری شارژی","link":"#"},
+                {"id":4,"name":"شارژر باتری","link":"#"},
+                {"id":4,"name":"باتری سکه ای","link":"#"}
+            ]},
+            {"id":3,"name":"اندروید باکس و گیرنده دیجیتال","link":"#"},
+            {"id":4,"name":"آنتن رومیزی","link":"#"},
+            {"id":5,"name":"مچ بند وساعت هوشمند","link":"#"},
+            {"id":6,"name":"محصولات کمبو","link":"#"},
+            {"id":7,"name":"رابط برق وUSB","link":"#"},
+            {"id":8,"name":"اف ام پلیر","link":"#"}
+        ]},
+
+        {"id":8,"name":"برندها","link":"https://google.com","dropdown":[
+            {"id":1,"name":"هایلو  Haylou","link":"#"},
+            {"id":2,"name":"دای هارد    Die Hard","link":"#"},
+            {"id":3,"name":"اسکال کندی  SkullCandy","link":"#"},
+            {"id":4,"name":"اپل         Apple","link":"#"},
+            {"id":5,"name":"کملیون      Camelion","link":"#"},
+            {"id":6,"name":"کلومن پلاس   Keluman Plus","link":"#"},
+
+            {"id":7,"name":"یسیدو       Yesido","link":"#"},
+            {"id":8,"name":"نزتک        Naztech","link":"#"},
+            {"id":9,"name":"پرووان      ProOne","link":"#"},
+            {"id":10,"name":"ال دی نیو   Ldnio","link":"#"},
+            {"id":11,"name":"دوراسل      Duracell","link":"#"},
+            {"id":12,"name":"سومو        Somo","link":"#"},
+
+            {"id":13,"name":"بیسوس       Baseus","link":"#"},
+            {"id":14,"name":"بویا        Boya","link":"#"},
+            {"id":15,"name":"مک دودو      Mcdodo","link":"#"},
+            {"id":16,"name":"پاورولوژی   Powerology","link":"#"},
+            {"id":17,"name":"راوپاور      Ravpower","link":"#"},
+            {"id":18,"name":"آکی        Aukey","link":"#"},
+
+            {"id":19,"name":"انکر       Anker","link":"#"},
+            {"id":20,"name":"آینوبن        inoben","link":"#"},
+            {"id":21,"name":"مومکس       Momax","link":"#"},
+            {"id":22,"name":"وسترن دیجیتال   Western Digital","link":"#"},
+            {"id":23,"name":"شیاومی      Xiaomi","link":"#"},
+            {"id":24,"name":"پاناسونیک        Panasonic","link":"#"},
+
+            {"id":25,"name":"نیکین       Neekin","link":"#"},
+            {"id":26,"name":"پایونیر        Pioneer","link":"#"},
+            {"id":27,"name":"جی پی       GP","link":"#"},
+            {"id":28,"name":"ای فورتک     A4tech","link":"#"},
+            {"id":29,"name":"وان مور      1more","link":"#"},
+            {"id":30,"name":"مکسل        Maxell","link":"#"}
+
+        ]}
+
+    ],
+    "slider":[
+        {"id":1,"image":"https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-1%20(1).png","alt":"image-1"},
+        {"id":2,"image":"https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-2-min.png","alt":"image-2"},
+        {"id":3,"image":"https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-4-min.png","alt":"image-3"},
+        {"id":4,"image":"https://www.dastresi.com/upload/filemanager/2024/12/01/banner%20acefast.jpg","alt":"image-4"}
+
+    ],
+
+    "product":[
+        {
+            "id": 1,
+            "name": "جت فن پرودو",
+            "brand": "Porodo",
+            "model": "PD-LFST055",
+            "oldPrice": 3497000,
+            "discount": 500000,
+            "price": 2997000,
+            "image": "https://www.dastresi.com/upload/filemanager/2025/01/29/JETFAN-PORODO-11.jpg"
+          },
+          {
+            "id": 2,
+            "name": "پاوربانک 16000 میلی آمپر سولار 20 واتی پاورولوژی",
+            "brand": "Powerology",
+            "model": "PPBCHA70",
+            "oldPrice": 3840000,
+            "discount": 1000000,
+            "price": 2840000,
+            "image": "https://www.dastresi.com/upload/filemanager/2025/01/16/POWERLOGY-111.jpg"
+          },
+          
+        {
+            "id": 3,
+            "name": "پاوربانک 20 هزار میلی آمپر 30 واتی با کابل تایپ سی پاورولوژی",
+            "brand": "Powerology",
+            "model": "PPBCHA67-BK",
+            "oldPrice": 2850000,
+            "discount": 1000000,
+            "price": 1950000,
+            "image": "https://www.dastresi.com/upload/filemanager/2025/01/18/PPBCHA67-11.jpg"
+          },
+          {
+            "id": 4,
+            "name": "ماساژور تفنگی فیلیپس",
+            "brand": "Philips",
+            "model": "PPM3203G",
+            "oldPrice": 5150000,
+            "discount": 1000000,
+            "price": 4150000,
+            "image": "https://www.dastresi.com/upload/filemanager/2025/01/29/PHILIPS-21.jpg"
+          },
+          {
+            "id": 5,
+            "name": "پاوربانک مگ سیف مک دودو 5 هزار میلی آمپر مدل ",
+            "brand": "Mcdodo",
+            "model": " 7050",
+            "oldPrice": 1391000,
+            "discount": 101000,
+            "price": 1290000,
+            "image": "https://www.dastresi.com/upload/filemanager/2022/03/15/power-bank1.jpg"
+          }
+          
+    ],
+    
+    "slider2":[
+        {"id":1,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-1"},
+        {"id":2,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-2"},
+        {"id":3,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-3"},
+        {"id":4,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-4"},
+        {"id":5,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/battery.png","alt":"image-5"},
+        {"id":6,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/gaming.png","alt":"image-6"},
+        {"id":7,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/cable.png","alt":"image-7"},
+        {"id":8,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png","alt":"image-8"},
+        {"id":9,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-9"},
+        {"id":10,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-10"},
+        {"id":11,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-11"},
+        {"id":12,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-12"},
+        {"id":13,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png","alt":"image-13"},
+        {"id":14,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-14"},
+        {"id":15,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-15"},
+        {"id":16,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-16"},
+        {"id":17,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-17"},
+        {"id":18,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-18"},
+        {"id":19,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-19"},
+        {"id":20,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-20"},
+        {"id":21,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-21"},
+        {"id":22,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/battery.png","alt":"image-22"},
+        {"id":23,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/gaming.png","alt":"image-23"},
+        {"id":24,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/cable.png","alt":"image-24"},
+        {"id":25,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png","alt":"image-25"},
+        {"id":26,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-26"},
+        {"id":27,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-27"},
+        {"id":28,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-28"},
+        {"id":29,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-29"},
+        {"id":30,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png","alt":"image-30"},
+        {"id":31,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png","alt":"image-31"},
+        {"id":32,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png","alt":"image-32"},
+        {"id":33,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png","alt":"image-33"},
+        {"id":34,"image":"https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png","alt":"image-34"}
+    ],
+
+    "goods":[
+        
+            {
+              "id": 1,
+              "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+              "title": "تایپ سی به لایتینگ",
+              "description": "کابل شارژ مگنتی تایپ سی به لایتینگ",
+              "old_price": "580000",
+              "new_price": "550000"
+            },
+            {
+              "id": 2,
+              "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-151-11.jpg",
+              "title": "پاوربانک و جامپ استارتر",
+              "description": "پاوربانک 10000 میلی آمپری وایرلس",
+              "old_price": "",
+              "new_price": "1747000"
+            },
+            {
+              "id": 3,
+              "image": "https://www.dastresi.com/upload/filemanager/2025/01/09/199MCDODDO=11.jpg",
+              "title": "سه کاره",
+              "description": "کابل شارژ 4 کاره 60 واتی مک 1.2",
+              "old_price": "",
+              "new_price": "550000"
+            },
+            {
+                "id": 4,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/08/668MCDODDO=11.jpg",
+                "title": "دوسر تایپ سی",
+                "description": "کابل شارژ دوسر تایپ سی اتو پاور 10",
+                "old_price": "",
+                "new_price": "850000"
+              },
+              {
+                "id": 5,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/07/PCCSR019-11.jpg",
+                "title": "شارژر فندکی 115 واتی با کابل تایپ",
+                "description": "کابل شارژ 4 کاره 60 واتی مک 1.2",
+                "old_price": "",
+                "new_price": "1850000"
+              },
+              {
+                "id": 6,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/04/GNDUECH10WBG-11.jpg",
+                "title": "اسپیکر",
+                "description": "اسپیکر بلوتوثی کارایکو گرین مدل G1",
+                "old_price": "",
+                "new_price": "1390000"
+              },
+              {
+                "id": 7,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/16/POWERLOGY-111.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 8,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/15/JETFAN-11.jpg",
+                "title": "انواع گجت های جذاب",
+                "description": "جت فن 150 واتی گرین مدل Green Lion",
+                "old_price": "",
+                "new_price": "3820000"
+              },
+              {
+                "id": 9,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/13/ORAIMO725-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 27600 میلی آمپر 130 واتی",
+                "old_price": "",
+                "new_price": "4690000"
+              },
+              {
+                "id": 10,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/12/ANKER2348-11.jpg",
+                "title": "شارژر دیواری",
+                "description": "شارژر دیواری 20 واتی به همراه کابل",
+                "old_price": "",
+                "new_price": "3820000"
+              },
+              {
+                "id": 11,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 50000 میلی آمپر 22.5 واتی",
+                "old_price": "",
+                "new_price": "2397000"
+              },
+              {
+                "id": 12,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 13,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-151-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 14,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 15,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 16,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/12/ANKER2348-11.jpg",
+                "title": "شارژر دیواری",
+                "description": "شارژر دیواری 20 واتی به همراه کابل",
+                "old_price": "",
+                "new_price": "3820000"
+              },
+              {
+                "id": 17,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 50000 میلی آمپر 22.5 واتی",
+                "old_price": "",
+                "new_price": "2397000"
+              },
+              {
+                "id": 18,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 19,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-151-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 20,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 21,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                "old_price": "382000",
+                "new_price": "2820000"
+              },
+              {
+                "id": 22,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+                "title": "تایپ سی به لایتینگ",
+                "description": "کابل شارژ مگنتی تایپ سی به لایتینگ",
+                "old_price": "580000",
+                "new_price": "550000"
+              },
+              {
+                "id": 23,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-151-11.jpg",
+                "title": "پاوربانک و جامپ استارتر",
+                "description": "پاوربانک 10000 میلی آمپری وایرلس",
+                "old_price": "",
+                "new_price": "1747000"
+              },
+              {
+                "id": 24,
+                "image": "https://www.dastresi.com/upload/filemanager/2025/01/09/199MCDODDO=11.jpg",
+                "title": "سه کاره",
+                "description": "کابل شارژ 4 کاره 60 واتی مک 1.2",
+                "old_price": "",
+                "new_price": "550000"
+              },
+              {
+                  "id": 25,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/08/668MCDODDO=11.jpg",
+                  "title": "دوسر تایپ سی",
+                  "description": "کابل شارژ دوسر تایپ سی اتو پاور 10",
+                  "old_price": "",
+                  "new_price": "850000"
+                },
+                {
+                  "id": 26,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/07/PCCSR019-11.jpg",
+                  "title": "شارژر فندکی 115 واتی با کابل تایپ",
+                  "description": "کابل شارژ 4 کاره 60 واتی مک 1.2",
+                  "old_price": "",
+                  "new_price": "1850000"
+                },
+                {
+                  "id": 27,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/04/GNDUECH10WBG-11.jpg",
+                  "title": "اسپیکر",
+                  "description": "اسپیکر بلوتوثی کارایکو گرین مدل G1",
+                  "old_price": "",
+                  "new_price": "1390000"
+                },
+                {
+                  "id": 28,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/16/POWERLOGY-111.jpg",
+                  "title": "پاوربانک و جامپ استارتر",
+                  "description": "پاوربانک 16000 میلی آمپر سولار 20",
+                  "old_price": "382000",
+                  "new_price": "2820000"
+                },
+                {
+                  "id": 29,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/15/JETFAN-11.jpg",
+                  "title": "انواع گجت های جذاب",
+                  "description": "جت فن 150 واتی گرین مدل Green Lion",
+                  "old_price": "",
+                  "new_price": "3820000"
+                },
+                {
+                  "id": 30,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/13/ORAIMO725-11.jpg",
+                  "title": "پاوربانک و جامپ استارتر",
+                  "description": "پاوربانک 27600 میلی آمپر 130 واتی",
+                  "old_price": "",
+                  "new_price": "4690000"
+                },
+                {
+                  "id": 31,
+                  "image": "https://www.dastresi.com/upload/filemanager/2025/01/12/ANKER2348-11.jpg",
+                  "title": "شارژر دیواری",
+                  "description": "شارژر دیواری 20 واتی به همراه کابل",
+                  "old_price": "",
+                  "new_price": "3820000"
+                }
+
+
+
+    ],
+
+    "stuff":[
+        
+      {
+        "id": 1,
+        "image": "https://www.dastresi.com/upload/filemanager/2024/10/12/PPHB45-11.jpg",
+        "title": "پاوربانک و جامپ استارتر",
+        "description": "شارژر دیواری و پاوربانک وایرلس 100",
+        "old_price": "",
+        "new_price": "550000"
+      },
+      {
+        "id": 2,
+        "image": "https://www.dastresi.com/upload/filemanager/2024/10/10/HARMOONY-FE1100-11.jpg",
+        "title": "رینگ لایت و پایه",
+        "description": "رینگ لایت 18 اینچ 100 واتی هارمونی",
+        "old_price": "",
+        "new_price": "4400000"
+      },
+      {
+        "id": 3,
+        "image": "https://www.dastresi.com/upload/filemanager/2024/10/02/0088-1.jpg",
+        "title": "هندزفری بلوتوث دوگوش",
+        "description": "هندزفری بلوتوثی ورزشی القایی پاورو..",
+        "old_price": "2695000",
+        "new_price": "2395000"
+      },
+      {
+          "id": 4,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg",
+          "title": "شارژر دیواری",
+          "description": "شارژر دیواری گان 100 واتی الدینیو...",
+          "old_price": "2797000",
+          "new_price": "1797000"
+        },
+        {
+          "id": 5,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/09/28/LDNIO-Y3-11.jpg",
+          "title": "انواع گجت های جذاب",
+          "description": "شارژر رومیزی وایرلس و چراغ رومیزی..",
+          "old_price": "",
+          "new_price": "1850000"
+        },
+        {
+          "id": 6,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/09/28/ANKER-8757-11.jpg",
+          "title": "دوسر تایپ سی",
+          "description": "کابل شارژر تایپ سی 1.8 متری ان...",
+          "old_price": "",
+          "new_price": "1390000"
+        },
+        {
+          "id": 7,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg",
+          "title": "باتری آلکالاین",
+          "description": "باتری نیم قلم 10 تایی شیائومی مدل ...",
+          "old_price": "",
+          "new_price": "209000"
+        },
+        {
+          "id": 8,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-11.jpg",
+          "title": "باتری آلکالاین",
+          "description": "باتری قلمی 10تایی شیائومی مدل Xia...",
+          "old_price": "",
+          "new_price": "3820000"
+        },
+        {
+          "id": 9,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/Untitled-1.jpg",
+          "title": "ماوس و کیبورد و پدموس",
+          "description": "کیبورد بلوتوثی مافی مدل Mofi Phoe...",
+          "old_price": "",
+          "new_price": "2590000"
+        },
+        {
+          "id": 10,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/POMP47-22.jpg",
+          "title": "پاوربانک و جامپ استارتر",
+          "description": "جامپ استاتر و پمپ باد پاورولوژی م...",
+          "old_price": "",
+          "new_price": "3820000"
+        },
+        {
+          "id": 11,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/14/mophie-401307720-11.jpg",
+          "title": "شارژر رومیزی",
+          "description": " شارژر رومیزی وایرلس مگ سیف موفی مد...",
+          "old_price": "",
+          "new_price": "2397000"
+        },
+        {
+          "id": 12,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/12/PPHB45-11.jpg",
+          "title": "پاوربانک و جامپ استارتر",
+          "description": "شارژر دیواری و پاوربانک وایرلس 100",
+          "old_price": "",
+          "new_price": "550000"
+        },
+        {
+          "id": 13,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/10/HARMOONY-FE1100-11.jpg",
+          "title": "رینگ لایت و پایه",
+          "description": "رینگ لایت 18 اینچ 100 واتی هارمونی",
+          "old_price": "",
+          "new_price": "4400000"
+        },
+        {
+          "id": 14,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/02/0088-1.jpg",
+          "title": "هندزفری بلوتوث دوگوش",
+          "description": "هندزفری بلوتوثی ورزشی القایی پاورو..",
+          "old_price": "2695000",
+          "new_price": "2395000"
+        },
+        {
+            "id": 15,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg",
+            "title": "شارژر دیواری",
+            "description": "شارژر دیواری گان 100 واتی الدینیو...",
+            "old_price": "2797000",
+            "new_price": "1797000"
+          },
+          {
+            "id": 16,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/09/28/LDNIO-Y3-11.jpg",
+            "title": "انواع گجت های جذاب",
+            "description": "شارژر رومیزی وایرلس و چراغ رومیزی..",
+            "old_price": "",
+            "new_price": "1850000"
+          },
+          {
+            "id": 17,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/09/28/ANKER-8757-11.jpg",
+            "title": "دوسر تایپ سی",
+            "description": "کابل شارژر تایپ سی 1.8 متری ان...",
+            "old_price": "",
+            "new_price": "1390000"
+          },
+          {
+            "id": 18,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg",
+            "title": "باتری آلکالاین",
+            "description": "باتری نیم قلم 10 تایی شیائومی مدل ...",
+            "old_price": "",
+            "new_price": "209000"
+          },
+          {
+            "id": 19,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-11.jpg",
+            "title": "باتری آلکالاین",
+            "description": "باتری قلمی 10تایی شیائومی مدل Xia...",
+            "old_price": "",
+            "new_price": "3820000"
+          },
+          {
+            "id": 20,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/Untitled-1.jpg",
+            "title": "ماوس و کیبورد و پدموس",
+            "description": "کیبورد بلوتوثی مافی مدل Mofi Phoe...",
+            "old_price": "",
+            "new_price": "2590000"
+          },
+          {
+            "id": 21,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/POMP47-22.jpg",
+            "title": "پاوربانک و جامپ استارتر",
+            "description": "جامپ استاتر و پمپ باد پاورولوژی م...",
+            "old_price": "",
+            "new_price": "3820000"
+          },
+          {
+            "id": 22,
+            "image": "https://www.dastresi.com/upload/filemanager/2024/10/14/mophie-401307720-11.jpg",
+            "title": "شارژر رومیزی",
+            "description": " شارژر رومیزی وایرلس مگ سیف موفی مد...",
+            "old_price": "",
+            "new_price": "2397000"
+          }
+],
+
+"brands":[
+      
+        {"id":1,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-1"},
+        {"id":2,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg","alt":"image-2"},
+        {"id":3,"image":"https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg","alt":"image-3"},
+        {"id":4,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":5,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":6,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":7,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":8,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"},
+        {"id":9,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-1"},
+        {"id":10,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg","alt":"image-2"},
+        {"id":11,"image":"https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg","alt":"image-3"},
+        {"id":12,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":13,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":14,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":15,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":16,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"},
+        {"id":17,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-1"},
+        {"id":18,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg","alt":"image-2"},
+        {"id":19,"image":"https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg","alt":"image-3"},
+        {"id":20,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":21,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":22,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":23,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":24,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"},
+        {"id":25,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-1"},
+        {"id":26,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg","alt":"image-2"},
+        {"id":27,"image":"https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg","alt":"image-3"},
+        {"id":28,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":29,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":30,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":31,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":32,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"},
+        {"id":33,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":34,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":35,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":36,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":37,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"},
+        {"id":38,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-1"},
+        {"id":39,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg","alt":"image-2"},
+        {"id":40,"image":"https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg","alt":"image-3"},
+        {"id":41,"image":"https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg","alt":"image-4"},
+        {"id":42,"image":"https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg","alt":"image-5"},
+        {"id":43,"image":"https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg","alt":"image-6"},
+        {"id":44,"image":"https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg","alt":"image-7"},
+        {"id":45,"image":"https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg","alt":"image-8"}
+      
+],
+"article":[
+        {
+          "id": 1,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/31/round-screen-smart-watch-dastresiArtboard%201%20copy.jpg",
+          "title": "بهترین ساعت های هوشمند صفحه گرد: قیمت و مدل های برتر د..."
+        },
+        {
+          "id": 2,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/25/best-powerology-power-bank-dastresiArtboard%201%20copy%202.jpg",
+          "title": "بهترین پاوربانک پاورولوژی + 8 مدل از با کیفیت ترین ها"
+        },
+        {
+          "id": 3,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/fake-or-original-iphone-charger-dastresi-Artboard%201.jpg",
+          "title": "راهنمای تشخیص شارژر اصلی آیفون و بهترین جایگزین ها"
+        },{
+          "id": 4,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/20/eye-massager-dastresi-Artboard%201%20copy%203.jpg",
+          "title": "چرا باید از ماساژور چشم استفاده کنید؟"
+        },{
+          "id": 5,
+          "image": "https://www.dastresi.com/upload/filemanager/2025/01/25/wired-handsfree-phone-dastresi-.jpg",
+          "title": "خرید بهترین هندزفری سیمی تا 500 تومان"
+        },{
+          "id": 6,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/12/30/best-smelling-microphone-dastresi-Artboard%201%20copy%202%20(1).jpg",
+          "title": " معرفی 5 مدل از بهترین میکروفن بویا"
+        },{
+          "id": 7,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/12/24/Microphone-under-1-millionArtboard%201%20(1).jpg",
+          "title": "راهنمای خرید بهترین میکروفن زیر 1 میلیون تومان"
+        },{
+          "id": 8,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/11/03/ssd-external-dastresi-Artboard%201%20copy%203.jpg",
+          "title": "بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!"
+        },
+        {
+          "id": 9,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/31/round-screen-smart-watch-dastresiArtboard%201%20copy.jpg",
+          "title": "بهترین ساعت های هوشمند صفحه گرد: قیمت و مدل های برتر د..."
+        },
+        {
+          "id": 10,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/25/best-powerology-power-bank-dastresiArtboard%201%20copy%202.jpg",
+          "title": "بهترین پاوربانک پاورولوژی + 8 مدل از با کیفیت ترین ها"
+        },
+        {
+          "id": 11,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/fake-or-original-iphone-charger-dastresi-Artboard%201.jpg",
+          "title": "راهنمای تشخیص شارژر اصلی آیفون و بهترین جایگزین ها"
+        },{
+          "id": 12,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/10/20/eye-massager-dastresi-Artboard%201%20copy%203.jpg",
+          "title": "چرا باید از ماساژور چشم استفاده کنید؟"
+        },{
+          "id": 13,
+          "image": "https://www.dastresi.com/upload/filemanager/2025/01/25/wired-handsfree-phone-dastresi-.jpg",
+          "title": "خرید بهترین هندزفری سیمی تا 500 تومان"
+        },{
+          "id": 14,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/12/30/best-smelling-microphone-dastresi-Artboard%201%20copy%202%20(1).jpg",
+          "title": " معرفی 5 مدل از بهترین میکروفن بویا"
+        },{
+          "id": 15,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/12/24/Microphone-under-1-millionArtboard%201%20(1).jpg",
+          "title": "راهنمای خرید بهترین میکروفن زیر 1 میلیون تومان"
+        },{
+          "id": 16,
+          "image": "https://www.dastresi.com/upload/filemanager/2024/11/03/ssd-external-dastresi-Artboard%201%20copy%203.jpg",
+          "title": "بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!"
+        }
+]
+}
